@@ -23,7 +23,7 @@ if (!function_exists('ambil_ip_server')) {
         }
         // Cadangan: gethostbyname bila /proc tidak tersedia
         if (!$ips) {
-            $ip = gethostbyname($hostname)
+            $ip = gethostbyname($hostname);
             if ($ip !== $hostname) {
                 $ips[$ip] = $ip;
             }
